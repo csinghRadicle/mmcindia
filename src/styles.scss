@@ -1,1 +1,61 @@
+@import "ag-grid-community/dist/styles/ag-grid.css";
+@import "ag-grid-community/dist/styles/ag-theme-alpine.css";
 /* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; background-color: #ebebeb; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+.mat-drawer-container {
+    margin-top: -20px;
+    background-color: transparent !important;
+    .mat-drawer-content {
+        padding: 0 25px !important;
+        background-color: transparent !important;
+        .example-sidenav-content {
+            
+            padding: 0 25px 25px!important;
+            background-color: #fff;
+        }
+    }
+    
+}
+.c-white { color: #fff;}
+.w-420 { width: 420px;}
+.d-flex { display: flex;}
+.flex-center { align-items: center;}
+.justify-between { justify-content: space-between;}
+.m-right10 { margin-right: 10px !important;}
+.bg-color { background-color: #0985c7 !important;}
+.content {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: auto;
+    
+    
+    @media screen and (min-width: 1024px) {
+        max-width: 1024px;  
+    }
+    @media screen and (min-width: 1440px) {
+        max-width: 1440px;
+    }
+    @media screen and (min-width: 1920px) {
+        max-width: 1920px;
+    }
+
+}
+.example-sidenav.active .bars-btn mat-icon {transform: rotate(-180deg);     margin-right: 12px;}
+nav {
+    background: rgb(0,41,79);
+    background: linear-gradient(90deg, rgba(0,41,79,1) 0%, rgba(6,56,91,1) 48%, rgba(13,89,114,1) 100%);
+    padding: 25px 0;
+}
+.mat-expansion-panel-body {
+    padding: 0 0px 16px !important;
+}
+.mat-expansion-panel-header, .mat-expansion-panel-header.mat-expanded {
+    height: 45px;
+    background-color: #00294f !important;
+    border-radius: 0;
+    mat-panel-title, .mat-expansion-indicator::after {
+    color: #fff !important;
+    }
+}
