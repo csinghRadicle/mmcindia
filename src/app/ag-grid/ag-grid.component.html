@@ -1,0 +1,33 @@
+<p>ag-grid works!</p>
+<div class="d-flex justify-between">
+    <div>
+        <mat-form-field class="example-full-width" appearance="fill">
+            <mat-label>Date</mat-label>
+            <input matInput [matDatepicker]="picker">
+            <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+            <mat-datepicker #picker></mat-datepicker>
+          </mat-form-field>
+    </div>
+    <div>
+        <button mat-flat-button color="primary" (click)="actionOne()" class="m-right10 bg-color">ACTION ONE</button>
+        <button mat-flat-button color="accent" (click)="actionTwo()" class="bg-color">ACTION TWO</button>
+    </div>
+</div>
+<mat-accordion [multi]="true">
+   
+    <mat-expansion-panel [expanded]="true">
+      <mat-expansion-panel-header>
+        <mat-panel-title>
+            Momentum Ag-grid
+        </mat-panel-title>
+       
+      </mat-expansion-panel-header>
+      <ag-grid-angular
+    style="width: 100%; height: 500px;"
+    class="ag-theme-alpine"
+    [rowData]="rowData"
+    [columnDefs]="columnDefs">
+</ag-grid-angular>
+    </mat-expansion-panel>
+  </mat-accordion>
+
